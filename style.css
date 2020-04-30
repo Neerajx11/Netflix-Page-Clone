@@ -1,11 +1,73 @@
 * {
+  box-sizing: border-box;
   font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  padding: 0rem;
-  margin: 0rem;
+
+/* =========================== */
+/* DEFAULTS */
+/* =========================== */
+
+
+ a,a:visited, button{
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
 }
+
+/* add to anchor tag */
+.style-red-a{
+  font-weight: 500;
+  font-size: 14px;
+  padding: 10px 20px;
+  background-color: #e70000;
+}
+/* add to button */
+.give-hover-red a:hover{
+  background-color: #ff0000;
+}
+/* for flex */
+.flex{
+  display: flex;
+  justify-content: center;
+}
+.col{
+  flex-direction: column;
+}
+
+/* for headingg */
+
+.w{
+  color: #ffffff;
+}
+.tcenter{
+  text-align: center;
+}
+.white-head-title{
+  width: 650px;
+  font-size: 350%;
+  font-weight: 700;
+}
+.white-sub-title{
+  font-size: 180%;
+  font-weight: 500;
+}
+
+
+/* for big try btn (add to btn)*/
+.try-btn-size{
+  margin: 20px 0 40px 0;
+}
+/* add to anchor */
+.in-try{
+  padding: 15px 35px;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 .one {
   background-image: url("images/bg.jpg");
@@ -13,7 +75,7 @@ body {
 }
 
 .givebg {
-  background-color: #0000004d;
+  background-color: #00000098;
 }
 
 .nav {
@@ -23,165 +85,39 @@ body {
 }
 
 .nav img {
-  width: 10%;
-  height: 10%;
+  width: 150px;
+  height: auto;
 }
 
-.nav button {
-  max-width: 14rem;
-  max-height: 2.2rem;
-  margin-top: 2em;
-  background-color: #e70000;
-  border: none;
-  border-radius: 5px;
-  color: #ffffff;
-  font-weight: 600;
-}
-
-.nav button a {
-  color: #ffffff;
-  text-decoration: none;
+.nav button{
+  align-self: center;
 }
 
 .one-data {
-  display: flex;
   position: relative;
   align-items: center;
-  flex-direction: column;
 }
 
-.one-data h1, .one-data h4, .twobg h1 {
-  color: #ffffff;
-  text-align: center;
-  font-weight: bold;
-  max-width: 500px;
+.one-data p:nth-child(1){
+  padding: 150px 0 20px 0;
+}
+.one-data p:nth-child(2){
+  padding: 40px 0;
 }
 
-.one-data h1 {
-  font-size: 3rem;
-  padding-top: 5%;
+.one-trail button{
+  margin-bottom: 100px;
 }
-
-.one-data h4 {
-  font-size: 1.7rem;
-  margin-top: 0;
-}
-
-.one-trail {
-  display: flex;
-  justify-content: center;
-}
-
-.one-trail img, .blackimg {
-  width: 1em;
-  height: 1em;
-}
-
-.one-trail button {
-  font-size: 1.5rem;
-  font-weight: 200;
-  border-radius: 0;
-  background-color: #e70000;
-  border: none;
-  color: #ffffff;
-  width: 15em;
-  height: 3em;
-  margin-bottom: 4%;
-}
-
-.one-trail button:hover {
-  background-color: #ff0000;
-}
-
-.one-trail button a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.twobg {
-  background-image: url("images/twobg.jpg");
-  background-size: cover;
-}
-
-.twocon {
-  display: flex;
-  justify-content: center;
-}
-
-.twocon h1 {
-  margin: 0;
-  margin: 10% 0 2% 0;
-  font-size: 3em;
-}
-
-.twotimeline li {
-  color: #868686;
-  list-style-type: none;
-  font-weight: bold;
-  text-align: center;
-  font-size: 1.5em;
-  text-shadow: black;
-}
-
-.twotb li {
-  display: inline-block;
-  color: #ffffff;
-  font-weight: 300;
-  margin: 0 10.5% 0 10.5%;
-}
-
-.twotb li:nth-child(1) {
-  color: #21f761;
-  font-weight: 500;
-}
-
-.twotimeline input {
-  border-radius: 10px;
-  margin: 0 13% 0 13%;
-  z-index: -5;
-  padding: 0.3%;
-}
-
-.twotimelinebtn img {
-  width: 2%;
-  size: 2%;
+.arrow{
   position: relative;
-  margin: -90px 100px -13px 670px;
-  padding-bottom: 2%;
-  z-index: +1;
 }
 
-.greenbar {
-  position: relative;
-  border: 11.5px solid #18e054;
-  border-radius: 10px;
-  max-width: 490px;
-  margin: -42px 0 -10px 177px;
-}
-
-.twotimelinebtn img:nth-child(2) {
-  margin-left: 17%;
-}
-
-.twodown {
-  padding-bottom: 4%;
-}
-
-.twodown h1 {
-  max-width: 700px;
-  font-size: 1.6em;
-  font-weight: lighter;
-  margin: 3% 22% 0 22%
-}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 .threebg {
   background-color: #000000;
-  border-top: 8px solid #808080;
-  border-bottom: 8px solid #808080;
-}
-
-.threecon {
-  display: flex;
+  border-top: 8px solid #222;
+  border-bottom: 8px solid #222;
 }
 
 .tvkiimg {
@@ -191,8 +127,8 @@ body {
 
 .threetv video {
   position: relative;
-  width: 75.2%;
-  height: 60.2%;
+  width: 467px;
+  height: 303px;
   margin-left: 84px;
   margin-top: -1000em;
   margin-bottom: 116px;
@@ -202,20 +138,10 @@ body {
   max-width: 50%;
 }
 
-.threetext h1 {
-  color: #ffffff;
-  padding: 6% 0% 0% 10%;
+.pad60{
+  padding: 60px 0;
 }
 
-.threetext h1:nth-child(1) {
-  font-size: 2.5rem;
-}
-
-.threetext h1:nth-child(2) {
-  font-size: 1.6rem;
-  padding-bottom: 6%;
-  font-weight: 500;
-}
 
 .black {
   font-size: 1.5rem;
@@ -226,7 +152,6 @@ body {
   color: #ffffff;
   width: 13em;
   height: 2.7em;
-  margin: 0% 0% 8% 8%;
 }
 
 .black a {
@@ -234,13 +159,15 @@ body {
   text-decoration: none;
 }
 
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+.p4-10{
+  padding: 5px 0px;
+}
+
 .fourbg {
   background-color: #000000;
   z-index: -3;
-}
-
-.fourcon {
-  display: flex;
 }
 
 .fourimg, .fourtext {
@@ -254,12 +181,14 @@ body {
 }
 
 .fourdbar {
-  border: 2px solid #808080;
+  border: 2px solid #222;
   position: relative;
-  background-color: #000000e5;
+  background-color: #000000;
   border-radius: 10px;
   z-index: 3;
-  margin: -150px 150px 20px 80px;
+  width: 60%;
+  top: -25%;
+  left: 14%;
   display: flex;
 }
 
@@ -272,44 +201,27 @@ body {
   margin-left: 8%;
 }
 
-.fourdbar-text h1 {
+.fourdbar-text p {
   color: #ffffff;
   font-size: 90%;
 }
 
-.fourdbar-text h1:nth-child(1) {
+.fourdbar-text p:nth-child(1) {
   font-size: 120%;
 }
 
-.fourdbar-text h1:nth-child(2) {
+.fourdbar-text p:nth-child(2) {
   color: #2323b8;
   font-weight: 500;
   padding-bottom: 5%;
 }
-
-.fourtext {
-  padding-top: 10%;
+.downgif{
+  position: relative;
+  left: 20%;
+  top: 5px;
 }
 
-.fourtext h1 {
-  color: #ffffff;
-  margin: 0;
-  margin-left: 8%;
-}
-
-.fourtext h1:nth-child(1) {
-  font-size: 230%;
-  padding-bottom: 8%;
-}
-
-.fourtext h1:nth-child(2) {
-  font-size: 150%;
-  font-weight: 500;
-}
-
-.fourbtn {
-  margin-top: 4%;
-}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 .mac {
   position: relative;
@@ -319,35 +231,47 @@ body {
 .fiver video {
   position: absolute;
   margin: -462px 0px 480px 120px;
-  max-width: 62%;
-  max-height: 35%;
+  width: 400px;
+  height: auto;
 }
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 .six {
   background-color: #000000;
 }
 
-.sixhead h1 {
-  color: #ffffff;
-  margin: 0;
+.sixhead p {
   text-align: center;
   padding: 4% 4%;
-  font-size: 300%;
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 500;
 }
 
-.sixtopbar h1 {
-  color: #ffffff;
-  font-size: 1.7em;
-  font-weight: 200;
+.sixtopbar p {
   background-color: #1d1d1d;
   max-width: 60%;
-  margin: 0 0 0.5% 20%;
-  padding: 1%;
-  line-height: 35px;
+  padding: 20px;
+  margin: 5px auto;
 }
 
+.plus{
+  width: 20px;
+  position: relative;
+  align-self: center;
+}
+
+.flexplus{
+  display: flex;
+  justify-content: space-between 
+}
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 .first {
   position: relative;
+  cursor: pointer;
 }
 
 .second {
@@ -358,24 +282,29 @@ body {
   display: block;
   overflow: hidden;
 }
-
+.first:active .plus{
+  transform: rotate(-45deg);
+  transition: 0.2s;
+}
 .tree {
   margin-top: 4%;
 }
 
 .seven {
   background: #000000;
-  border-top: 8px solid #808080;
+  border-top: 8px solid #222;
 }
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 li {
   list-style: none;
-  margin-left: 1%;
-  color: #808080;
+  color: #757575;
+  font-size: 13px;
 }
 
 li a {
-  color: #808080;
+  color: #757575;
   text-decoration: none;
 }
 
@@ -384,53 +313,15 @@ li a:hover {
 }
 
 .seven {
-  padding: 2%;
+  padding: 4% 20%;
 }
 
 .samosa {
-  margin: 2% 0;
+  justify-content: space-between;
+  padding: 30px 0;
 }
 
-.s1 li {
-  display: inline;
-  margin-right: 18%;
-}
-
-.s2 li {
-  display: inline;
-  margin-right: 10.5%;
-}
-
-.s2 li:nth-child(2) {
-  margin-right: 21.95%;
-}
-
-.s2 li:nth-child(3) {
-  margin-right: 14.2%;
-}
-
-.s3 li {
-  display: inline;
-  margin-right: 16.2%;
-}
-
-.s3 li:nth-child(2) {
-  margin-right: 13.85%;
-}
-
-.s3 li:nth-child(3) {
-  margin-right: 10.52%;
-}
-
-.s4 li {
-  display: inline;
-  margin-right: 14.2%;
-}
-
-.s4 li:nth-child(2) {
-  margin-right: 17.15%;
-}
-
-.s1, .s2, .s3, .s4 {
-  padding: 0.7% 0;
+.s1 li,.s2 li,.s3 li,.s4 li{
+  padding: 10px 0;
+  min-width: max-content;
 }
