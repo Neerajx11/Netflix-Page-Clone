@@ -277,12 +277,7 @@
 .second {
   display: none;
 }
-
-.first:active .second {
-  display: block;
-  overflow: hidden;
-}
-.first:active .plus{
+.plusAnimate{
   transform: rotate(-45deg);
   transition: 0.2s;
 }
